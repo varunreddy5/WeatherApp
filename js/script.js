@@ -40,8 +40,8 @@ $(document).ready(function(){
     		type:'GET',
     		datatype:"jsonp",
     		data: {
-        		lat:startLatitude,
-        		lon: startLongitude,
+        		lat:latitude,
+        		lon: longitude,
         		cnt:7
         		},
     		success: function(result) {
