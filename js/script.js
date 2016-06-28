@@ -16,17 +16,13 @@ $(document).ready(function(){
 
 	var startLatitude=0;
 	var startLongitude=0;
-	var cityName="";
-	var city="";
+	
 	$("#start-location").geocomplete({
 		details:'.details-start',
 		detailsAttribute:'data-geo-start'
 	});
 
-	cityName=$("#start-location").val();
-	var city=cityName.split(",");
-
-
+	
 
 	$("button").click(function(){
 		startLatitude=$("#start-latitude").html();
@@ -34,9 +30,9 @@ $(document).ready(function(){
 		
 
 		console.log(startLatitude,startLongitude);
-		getEstimatesForUserLocation(city[0]);
+		getEstimatesForUserLocation(startLatitude,startLongitude);
 
-		function getEstimatesForUserLocation(cityName) {
+		function getEstimatesForUserLocation(latitude,longitude) {
 
   		
   		$.ajax({
@@ -44,7 +40,9 @@ $(document).ready(function(){
     		type:'GET',
     		datatype:"jsonp",
     		data: {
-        		q:cityName
+        		lat:latitude,
+        		lon: longitude,
+        		cnt:7
         		},
     		success: function(result) {
         	console.log(result);
