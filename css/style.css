@@ -1,0 +1,24 @@
+body {
+	font-family: 'Sintony', sans-serif;
+}
+.input-start-location{
+	margin-top: 150px;
+	margin-left: 350px;
+}
+.input-end-location{
+	margin-top: 10px;
+	margin-left: 350px;
+}
+#start-location,#end-location{
+	width:280px;
+}
+
+button{
+	padding:15px;
+	margin-left: 365px;
+	margin-top: 10px;
+
+}
+.details-start,.details-end{
+	display:none;
+}

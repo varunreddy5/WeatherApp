@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Geo Complete</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBAfOIJpOwKOilhUo7zDaaKf30sliMWhRg&libraries=places"></script>
+
+	<script src="js/jquery.geocomplete.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<form role="form">
+			<div class="form-group input-start-location">
+				<label for="pickup-location">Enter Pick Up Location</label>
+				<input class="form-control" id="start-location" type="text">
+			</div>
+
+			<!-- <div class="form-group input-end-location">
+				<label for="drop-location">Enter Destination</label>
+				<input class="form-control" id="end-location" type="text">
+			</div> -->
+
+			<div class="details-start">
+				<span data-geo-start="lat" id="start-latitude"></span>
+				<span data-geo-start="lng" id="start-longitude"></span>
+			</div>
+			<!-- <div class="details-end">
+				<span data-geo-end="lat" id="end-latitude"></span>
+				<span data-geo-end="lng" id="end-longitude"></span>
+			</div> -->
+
+		</form>
+
+		<!-- <div class="details">
+ 			Latitude:     <span data-geo="lat"></span><br>
+  			Longitude:    <span data-geo="lng"></span><br>
+  			Address:      <span data-geo="formatted_address"></span><br>
+  			Country Code: <span data-geo="country_short"></span><br>
+		</div> -->
+
+		<div id="my_input">
+
+		</div>
+
+		<div class="row">
+			<button class="btn btn-success">Submit</button>
+		</div>
+
+	</div>
+</body>
