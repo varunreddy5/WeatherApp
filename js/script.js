@@ -17,12 +17,16 @@ $(document).ready(function(){
 	var startLatitude=0;
 	var startLongitude=0;
 	var cityName="";
+	var city="";
 	$("#start-location").geocomplete({
 		details:'.details-start',
 		detailsAttribute:'data-geo-start'
 	});
 
 	cityName=$("#start-location").val();
+	var city=cityName.split(",");
+
+
 
 	$("button").click(function(){
 		startLatitude=$("#start-latitude").html();
@@ -30,7 +34,7 @@ $(document).ready(function(){
 		
 
 		console.log(startLatitude,startLongitude);
-		getEstimatesForUserLocation(cityName);
+		getEstimatesForUserLocation(city[0]);
 
 		function getEstimatesForUserLocation(cityName) {
 
