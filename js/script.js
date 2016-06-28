@@ -36,7 +36,7 @@ $(document).ready(function(){
 
   		
   		$.ajax({
-    		url: "api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}",
+    		url: "http://api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}",
     		type:'GET',
     		datatype:"jsonp",
     		data: {
