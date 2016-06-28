@@ -1,5 +1,8 @@
 $(document).ready(function(){
-	
+	var host = "https://varunreddy5.github.io";
+		if ((host == window.location.host) && (window.location.protocol == "https:"))
+   		window.location.protocol = "http";
+   		alert(window.location.protocol);
 	// $("#start-location").geocomplete().bind("geocode:result",function(event,result){
 	// 	var startLatitude=result.geometry.location.lat();
 	// 	var startLongitude=result.geometry.location.lng();
