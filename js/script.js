@@ -42,6 +42,7 @@ $(document).ready(function(){
     		data: {
         		lat:latitude,
         		lon: longitude,
+        		appid: 'cdd59afc159cde02f6321b9893177f80',
         		cnt:7
         		},
     		success: function(result) {
