@@ -1,24 +1,61 @@
 body {
 	font-family: 'Sintony', sans-serif;
 }
-.input-start-location{
-	margin-top: 150px;
+.div-location{
+	
 	margin-left: 350px;
 }
-.input-end-location{
-	margin-top: 10px;
+#heading{
 	margin-left: 350px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 35px;
 }
-#start-location,#end-location{
+/*#label-location{
+	margin-left: 100px;
+}*/
+#location{
 	width:280px;
+	margin-top: 20px;
 }
 
 button{
 	padding:15px;
-	margin-left: 365px;
-	margin-top: 10px;
+	margin-left: 470px;
+	/*margin-top: 10px;*/
 
 }
-.details-start,.details-end{
+.details{
 	display:none;
+}
+.results{
+	margin-top: 25px;
+	margin-left: 326px;
+	font-size: 16px;
+	display: none;
+}
+#day-3,#day-5,#day-7{
+	border: 1px solid #e1e1d0;
+	border-radius: 3px; 
+	padding: 6px 12px;
+}
+#day-3:hover,#day-5:hover,#day-7:hover{
+	background-color: #ebebe0;
+	cursor: pointer;
+}
+.results-panel{
+	margin-top: 10px;
+}
+.panel-day-1,.panel-day-2,.panel-day-3,.panel-day-4,.panel-day-5,.panel-day-6,.panel-day-7{
+	visibility: hidden;
+}
+.panel-heading,.panel-body{
+	text-align: center;
+}
+.panel-heading{
+	font-size: 16px;
+}
+.panel-body{
+	font-size: 16px;
+	line-height: 17px;
 }

@@ -17,45 +17,76 @@
 	<script src="js/jquery.geocomplete.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	
+
 </head>
 <body>
 	<div class="container">
+	<div id="heading">Weather Forecast</div>
 		<form role="form">
-			<div class="form-group input-start-location">
-				<label for="pickup-location">Enter Pick Up Location</label>
-				<input class="form-control" id="start-location" type="text">
+			<div class="form-group div-location">
+				<!-- <label for="label-location" id="label-location">Enter Location</label> -->
+				<input class="form-control" id="location" type="text">
 			</div>
 
-			<!-- <div class="form-group input-end-location">
-				<label for="drop-location">Enter Destination</label>
-				<input class="form-control" id="end-location" type="text">
-			</div> -->
-
-			<div class="details-start">
-				<span data-geo-start="lat" id="start-latitude"></span>
-				<span data-geo-start="lng" id="start-longitude"></span>
+			
+			<div class="details">
+				<span data-geo="lat" id="latitude"></span>
+				<span data-geo="lng" id="longitude"></span>
 			</div>
-			<!-- <div class="details-end">
-				<span data-geo-end="lat" id="end-latitude"></span>
-				<span data-geo-end="lng" id="end-longitude"></span>
-			</div> -->
-
+			
 		</form>
 
-		<!-- <div class="details">
- 			Latitude:     <span data-geo="lat"></span><br>
-  			Longitude:    <span data-geo="lng"></span><br>
-  			Address:      <span data-geo="formatted_address"></span><br>
-  			Country Code: <span data-geo="country_short"></span><br>
-		</div> -->
-
-		<div id="my_input">
-
+		<div class="row">
+			<button class="btn btn-success">Search</button>
 		</div>
 
-		<div class="row">
-			<button class="btn btn-success">Submit</button>
+		<div class="row results">
+			<p id="para-results">Show forcast for <span id="day-3">3</span> or <span id="day-5">5</span> or <span id="day-7">7</span> days </p> 
+		</div>
+
+		<div class="row results-panel">
+			<div class="col-sm-4 panel-day-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Heading</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
+			<div class="col-sm-4 panel-day-2">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Heading</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
+			<div class="col-sm-4 panel-day-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Heading</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
+			<div class="col-sm-4 panel-day-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Heading</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
+			<div class="col-sm-4 panel-day-5">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Heading</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
+			<div class="col-sm-4 panel-day-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Heading</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
+			<div class="col-sm-4 panel-day-7">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Heading</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
