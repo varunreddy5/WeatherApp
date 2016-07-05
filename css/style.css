@@ -1,6 +1,9 @@
 body {
 	font-family: 'Sintony', sans-serif;
 }
+#heading{
+	font-family: 'Pacifico', cursive;
+}
 .div-location{
 	
 	margin-left: 350px;
@@ -8,7 +11,7 @@ body {
 #heading{
 	margin-left: 350px;
 	margin-top: 20px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 35px;
 }
 /*#label-location{
